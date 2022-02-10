@@ -1,0 +1,234 @@
+/* public css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-radius: 3px;
+
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    min-width: 100px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.btn:hover {
+    background-color: #09b060;
+    color: var(--white-color);
+}
+
+.error {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: -10px 0 16px 0;
+}
+
+.warning {
+    color: orange;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: -10px 0 16px 0;
+}
+
+/* public css */
+
+.modal-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(51, 51, 51, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.login-contains {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 400px;
+    /* min-height: 400px; */
+    border-radius: var(--border-radius);
+    padding: 36px;
+    box-shadow: 0px 35px 44px -22px #1f181b;;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    margin-bottom: 30px;
+}
+
+.login-title {
+    color: var(--white-color);
+    font-size: 2.0rem;
+    text-transform: uppercase;
+}
+
+.login-form {
+    position: relative;
+}
+
+.login-form__input {
+    width: 100%;
+    padding: 15px 32px 15px 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--white-color);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.login-form__input::placeholder {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.login-form__input-user {
+    position: relative;
+}
+
+.login-form__input-pw {
+    position: relative;
+}
+
+.login-form__user-icon, 
+.login-form__key-icon {
+    color: var(--white-color);
+    font-size: 2.0rem;
+    position: absolute;
+    top: 22%;
+    right: 8px;
+}
+
+.login-form__pw {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    position: absolute;
+    top: calc(100% - 16px);
+    right: 0px;
+}
+
+.login-form__pw--save {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    float: right;
+}
+
+.save-pw-login__label {
+    padding-left: 8px;
+}
+
+#save-pw {
+    cursor: pointer;
+}
+
+.save-pw-login__label:hover {
+    color: #09b060;
+    cursor: pointer;
+}
+
+.login-form__pw--hide {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.hide-pw-login__label {
+    padding-left: 8px;
+    color: red;
+}
+
+.login-form__btn {
+    background-color: #2baf2b;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.login-form__btn:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.login-footer {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.login-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-social-btn__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.login-social-btn__link-facebook {
+    background-color: #38529a;
+    flex: 1;
+    margin-right: 2px;
+}
+
+.login-social-btn__link-facebook:hover {
+    background-color: #516394;
+}
+
+.login-social-btn__icon {
+    font-size: 2.0rem;
+    margin-right: 8px;
+}
+
+.login-social-btn__link-google {
+    flex: 1;
+    margin-left: 2px;
+}
+
+.login-social-btn__link-google:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.login-social-btn__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
