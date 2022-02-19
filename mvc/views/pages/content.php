@@ -52,7 +52,7 @@
     <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
         <div class="card dash-widget">
             <div class="card-body">
-                <span class="dash-widget-icon"><a href="#"><i class="fas fa-file-excel"></i></a></span>
+                <span class="dash-widget-icon"><a href="../public/lib/bangluongEx.php"><i class="fas fa-file-excel"></i></a></span>
                 <div class="dash-widget-info">
                     <h3>Excel</h3>
                     <span>Xuất bảng lương</span>
